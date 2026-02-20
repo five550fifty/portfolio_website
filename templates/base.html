@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <meta
+      name="description"
+      content="Portfolio: projects, skills, and contact info."
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </head>
+
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="brand" href="{{ url_for('index') }}">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Portfolio</span>
+      </a>
+
+      <nav class="nav" data-nav>
+        <a class="nav__link" href="{{ url_for('index') }}">Home</a>
+        <a class="nav__link" href="{{ url_for('projects') }}">Projects</a>
+        <a class="nav__link" href="{{ url_for('contact') }}">Contact</a>
+        <button
+          class="nav__btn"
+          id="themeBtn"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          <span class="icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+
+      <button
+        class="burger"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main class="container">
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %}
+      <div class="toast-wrap">
+        {% for category, msg in messages %}
+        <div class="toast toast--{{ category }}">{{ msg }}</div>
+        {% endfor %}
+      </div>
+      {% endif %} {% endwith %} {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>
+          © <span id="year"></span> <span class="muted">Portfolio</span>. Built
+          with Flask.
+        </p>
+        <div class="footer__links">
+          <a href="https://github.com/five550fifty" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+          <a href="https://t.me/@lx_tmn" target="_blank" rel="noreferrer"
+            >Telegram</a
+          >
+          <a href="mailto:Bardyuka@inbox.ru">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
