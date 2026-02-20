@@ -43,7 +43,7 @@ block content %}
       <div class="profile__top">
         <div class="avatar">
           <!-- add static/img/avatar.png later -->
-          <img 
+          <img
             src="{{ url_for('static', filename='img/avatar.jpg') }}"
             alt="Avatar"
             onerror="this.style.display = 'none'"
@@ -126,21 +126,10 @@ block content %}
 <section class="section">
   <div class="section__head">
     <h2 class="h2">Quick project overview</h2>
-    <p class="muted">Top 3. The rest are on the Projects page.</p>
+    <p class="muted">Featured projects. The rest are on the Projects page.</p>
   </div>
 
   <div class="projects-preview">
-    <a class="card proj" href="{{ url_for('projects') }}">
-      <div class="proj__top">
-        <div class="proj__title">Budget Tracker</div>
-        <div class="badge">Python</div>
-      </div>
-      <p class="muted">
-        Expense tracking + goals + CSV/files. Clean UI and validation.
-      </p>
-      <div class="proj__bottom">Learn more →</div>
-    </a>
-
     <a class="card proj" href="{{ url_for('projects') }}">
       <div class="proj__top">
         <div class="proj__title">High Score Manager</div>
