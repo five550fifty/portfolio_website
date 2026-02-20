@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Home</title>
+    <meta
+      name="description"
+      content="Portfolio: projects, skills, and contact info."
+    />
+
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <script defer src="static/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="brand" href="index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Portfolio</span>
+      </a>
+
+      <nav class="nav" data-nav>
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="projects.html">Projects</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <button
+          class="nav__btn"
+          id="themeBtn"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          <span class="icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+
+      <button
+        class="burger"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero__left">
+          <div class="pill">
+            <span class="pill__dot"></span>
+            <span>Python • Flask • Web • UI • Java</span>
+          </div>
+
+          <h1 class="h1">
+            Hi, I'm <span class="accent">Artem Bardyuk</span> 👋
+          </h1>
+
+          <p class="lead">
+            I build clean applications and modern websites. I focus on readable
+            code, solid UX, and projects people actually use.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="projects.html">
+              View Projects
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--ghost" href="contact.html">Get in Touch</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat card">
+              <div class="stat__num">10+</div>
+              <div class="stat__label">mini projects</div>
+            </div>
+            <div class="stat card">
+              <div class="stat__num">Python</div>
+              <div class="stat__label">primary stack</div>
+            </div>
+            <div class="stat card">
+              <div class="stat__num">UI</div>
+              <div class="stat__label">clean UI focus</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="profile card">
+            <div class="profile__top">
+              <div class="avatar">
+                <img
+                  src="static/img/avatar.jpg"
+                  alt="Avatar"
+                  onerror="this.style.display = 'none'"
+                />
+                <div class="avatar__fallback"></div>
+              </div>
+
+              <div>
+                <div class="profile__name">Artem Bardyuk</div>
+                <div class="profile__role muted">
+                  Student Developer • UK / Remote
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="profile__grid">
+              <div class="mini">
+                <div class="mini__k">Currently building</div>
+                <div class="mini__v">Flask projects + portfolio</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Interests</div>
+                <div class="mini__v">Backend • Automation • Security</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Open to</div>
+                <div class="mini__v">Internship / Junior roles</div>
+              </div>
+              <div class="mini">
+                <div class="mini__k">Contact</div>
+                <div class="mini__v">Bardyuka@inbox.ru</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-note">
+            <div class="glass-note__title">Highlights</div>
+            <p class="muted">
+              Theme toggle (dark/light), responsive menu, and portfolio project
+              showcase.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Strengths</h2>
+          <p class="muted">Short and focused.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card feature">
+            <div class="feature__icon">⚡</div>
+            <h3>Fast and clean</h3>
+            <p class="muted">
+              I build clear project structure, readable code, and intuitive
+              interfaces.
+            </p>
+          </article>
+
+          <article class="card feature">
+            <div class="feature__icon">🧠</div>
+            <h3>Logic + UX</h3>
+            <p class="muted">
+              Not just functional, but easy to use. I care about details.
+            </p>
+          </article>
+
+          <article class="card feature">
+            <div class="feature__icon">🛠️</div>
+            <h3>Results-oriented</h3>
+            <p class="muted">
+              Validation, error handling, README, and polished presentation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Quick project overview</h2>
+          <p class="muted">Top 3. The rest are on the Projects page.</p>
+        </div>
+
+        <div class="projects-preview">
+          <a class="card proj" href="projects.html">
+            <div class="proj__top">
+              <div class="proj__title">Budget Tracker</div>
+              <div class="badge">Python</div>
+            </div>
+            <p class="muted">
+              Expense tracking + goals + CSV/files. Clean UI and validation.
+            </p>
+            <div class="proj__bottom">Learn more →</div>
+          </a>
+
+          <a class="card proj" href="projects.html">
+            <div class="proj__top">
+              <div class="proj__title">High Score Manager</div>
+              <div class="badge">Tkinter</div>
+            </div>
+            <p class="muted">
+              High scores, sorting, persistence, and input validation.
+            </p>
+            <div class="proj__bottom">Learn more →</div>
+          </a>
+
+          <a class="card proj" href="projects.html">
+            <div class="proj__top">
+              <div class="proj__title">Portfolio (Flask)</div>
+              <div class="badge">Web</div>
+            </div>
+            <p class="muted">
+              This website: design, responsiveness, theme toggle, and clean UX.
+            </p>
+            <div class="proj__bottom">Learn more →</div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>
+          © <span id="year"></span> <span class="muted">Portfolio</span>. Built
+          with Flask.
+        </p>
+        <div class="footer__links">
+          <a
+            href="https://github.com/five550fifty"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+          <a href="https://t.me/@lx_tmn" target="_blank" rel="noreferrer"
+            >Telegram</a
+          >
+          <a href="mailto:Bardyuka@inbox.ru">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

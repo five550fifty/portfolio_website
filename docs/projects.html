@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Projects</title>
+    <meta name="description" content="Portfolio projects by Artem Bardyuk." />
+
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <script defer src="static/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="brand" href="index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Portfolio</span>
+      </a>
+
+      <nav class="nav" data-nav>
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="projects.html">Projects</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <button
+          class="nav__btn"
+          id="themeBtn"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          <span class="icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+
+      <button
+        class="burger"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <div class="section__head">
+          <h1 class="h1 h1--small">Projects</h1>
+          <p class="muted">
+            Strong projects with clear presentation. Replace links with your
+            own.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="card project">
+            <div class="project__head">
+              <h3 class="project__title">Budget Tracker</h3>
+              <span class="badge">Python</span>
+            </div>
+            <p class="muted">
+              Login/registration, transactions, goals, progress, and CSV/file
+              storage.
+            </p>
+            <ul class="bullets">
+              <li>Input validation + error handling</li>
+              <li>UI: clear screens and navigation</li>
+              <li>README + run instructions</li>
+            </ul>
+            <div class="project__links">
+              <a
+                class="btn btn--small btn--primary"
+                href="https://github.com/USERNAME/budget-tracker"
+                target="_blank"
+                rel="noreferrer"
+                >Code</a
+              >
+              <a class="btn btn--small btn--ghost" href="#" rel="noreferrer"
+                >Demo/Screenshots</a
+              >
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__head">
+              <h3 class="project__title">High Score Manager</h3>
+              <span class="badge">Tkinter</span>
+            </div>
+            <p class="muted">
+              High score manager: file read/write, sorting, and user-friendly
+              interface.
+            </p>
+            <ul class="bullets">
+              <li>CSV/text file handling</li>
+              <li>Sorting and filtering</li>
+              <li>Protection from invalid input</li>
+            </ul>
+            <div class="project__links">
+              <a
+                class="btn btn--small btn--primary"
+                href="https://github.com/USERNAME/highscore-manager"
+                target="_blank"
+                rel="noreferrer"
+                >Code</a
+              >
+              <a class="btn btn--small btn--ghost" href="#" rel="noreferrer"
+                >Details</a
+              >
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project__head">
+              <h3 class="project__title">Portfolio Website (Flask)</h3>
+              <span class="badge">Flask</span>
+            </div>
+            <p class="muted">
+              Responsive design, theme, animations, contact form, and SQLite.
+            </p>
+            <ul class="bullets">
+              <li>Structured templates/static setup</li>
+              <li>Flash messages + validation</li>
+              <li>Ready for deployment</li>
+            </ul>
+            <div class="project__links">
+              <a
+                class="btn btn--small btn--primary"
+                href="https://github.com/USERNAME/portfolio-flask"
+                target="_blank"
+                rel="noreferrer"
+                >Code</a
+              >
+              <a class="btn btn--small btn--ghost" href="#" rel="noreferrer"
+                >Live Site</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>
+          © <span id="year"></span> <span class="muted">Portfolio</span>. Built
+          with Flask.
+        </p>
+        <div class="footer__links">
+          <a
+            href="https://github.com/five550fifty"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+          <a href="https://t.me/@lx_tmn" target="_blank" rel="noreferrer"
+            >Telegram</a
+          >
+          <a href="mailto:Bardyuka@inbox.ru">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

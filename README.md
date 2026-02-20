@@ -101,6 +101,49 @@ Open: **http://127.0.0.1:5000**
 
 ---
 
+## 🌍 Deploy to GitHub Pages
+
+This repo now includes a static version in `docs/` for GitHub Pages:
+
+- `docs/index.html`
+- `docs/projects.html`
+- `docs/contact.html`
+- `docs/static/...`
+
+### Enable Pages
+
+1. Push your repo to GitHub.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**:
+   - **Source:** `Deploy from a branch`
+   - **Branch:** `main`
+   - **Folder:** `/docs`
+4. Save and wait 1–2 minutes.
+
+Your URL will be:
+
+`https://five550fifty.github.io/portfolio_website/`
+
+### Contact form on Pages (Formspree)
+
+GitHub Pages cannot run Flask/SQLite. For static form submissions:
+
+1. Create a free form at Formspree.
+2. Copy your form ID (example: `xpzgkabc`).
+3. Edit `docs/contact.html` and replace:
+
+```html
+action="https://formspree.io/f/YOUR_FORM_ID"
+```
+
+with:
+
+```html
+action="https://formspree.io/f/xpzgkabc"
+```
+
+---
+
 ## 💬 Contact Form Storage
 
 - Messages are saved in `portfolio.db` (created automatically on first run).
